@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    span {
+      margin: 0 5px 0 0;
+    }
+    .friend > button {
+      margin: 0 3px 0 0;
+    }
+  </style>
+  <script src='/dist/main.js' defer></script>
+</head>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Friends list</h1>
+    <div id='form-container'>
+      <form method='POST' action='/api/friends'>
+        <input type='text' name='name' id='textInput'>
+        <input type='submit' value='submit'>
+      </form>
+    </div>
+    <ul id='friends-list'></ul>
+  </body>
+</html>

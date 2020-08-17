@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "build:dev": "npm run build -- --watch --mode development",
+    "start:server": "nodemon server.js --ignore src/ --ignore dist/",
+    "start:dev": "npm run build:dev & npm run start:server"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +19,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "express": "^4.17.1",
     "pg": "^8.3.0",
     "sequelize": "^6.3.4"
