@@ -15,7 +15,7 @@ const Friend = conn.define('friend', {
 })
 
 const syncAndSeed = async() => {
-  //await conn.sync({force: true});
+  await conn.sync({force: true});
   const [jordan, eric, reba] = await Promise.all([
     Friend.create({name: 'Lucy'}),
     Friend.create({name: 'Larry', rating: 1}),
