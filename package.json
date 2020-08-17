@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run build",
     "build": "webpack",
     "build:dev": "npm run build -- --watch --mode development",
     "start:server": "nodemon server.js --ignore src/ --ignore dist/",
