@@ -77,7 +77,7 @@ app.use((err, req, res, next) => {
   </html>`)
 })
 
-const port = process.env.PORT || 5050;
+const port = process.env.PORT || 5055;
 
 const init = async () => {
   try{
